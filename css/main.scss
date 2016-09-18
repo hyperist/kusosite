@@ -10,14 +10,19 @@ $base-font-weight: 400;
 $small-font-size:  $base-font-size * 0.875;
 $base-line-height: 1.5;
 
+$ss1: 'Poiret One', cursive;
+$ss2: 'Righteous', cursive;
+$fuck-font: 'Bokor', cursive;
+$future-font: 'Monoton', cursive;
+
 $text-color:       #eee;
 $background-color: #111;
 
 $eyecatch-width: 480px;
 $title-color: #fff;
 
-$h0: 220px;
-$h0-lh: 0.8;
+$h0: 200px;
+$h0-lh: 0.85;
 
 $grey:       #828282;
 $grey-light: lighten($grey, 40%);
@@ -44,6 +49,8 @@ body {
     margin: 0 auto;
     position: relative;
     .text {
+        text-transform: uppercase;
+        font-family: $future-font;
         word-wrap: break-word;
         word-break: break-all;
         position: absolute;
