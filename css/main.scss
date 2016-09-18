@@ -10,15 +10,18 @@ $base-font-weight: 400;
 $small-font-size:  $base-font-size * 0.875;
 $base-line-height: 1.5;
 
-$spacing-unit:     30px;
+$text-color:       #eee;
+$background-color: #111;
 
-$text-color:       #111;
-$background-color: #fdfdfd;
-$brand-color:      #2a7ae2;
+$eyecatch-width: 480px;
+$title-color: #fff;
 
-$grey-color:       #828282;
-$grey-color-light: lighten($grey-color, 40%);
-$grey-color-dark:  darken($grey-color, 25%);
+$h0: 220px;
+$h0-lh: 0.8;
+
+$grey:       #828282;
+$grey-light: lighten($grey, 40%);
+$grey-dark:  darken($grey, 25%);
 
 // Width of the content area
 $content-width:    800px;
@@ -26,14 +29,30 @@ $content-width:    800px;
 $on-palm:          600px;
 $on-laptop:        800px;
 
-// Minima also includes a mixin for defining media queries.
-// Use media queries like this:
-// @include media-query($on-palm) {
-//     .wrapper {
-//         padding-right: $spacing-unit / 2;
-//         padding-left: $spacing-unit / 2;
-//     }
-// }
+body {
+    font-family: $base-font-family;
+    font-size: $base-font-size;
+    font-weight: $base-font-weight;
+    line-height: $base-line-height;
+    background-color: $background-color;
+    background-image: url('../static/img/tunnel.jpg');
+}
 
-// Import partials from the `minima` theme.
-@import "minima";
+.eyecatch {
+    display: block;
+    width: $eyecatch-width;
+    margin: 0 auto;
+    position: relative;
+    .text {
+        word-wrap: break-word;
+        word-break: break-all;
+        position: absolute;
+        top: 0;
+        left: 0;
+        color: $title-color;
+        font-size: $h0;
+        line-height: $h0-lh;
+    }
+    .pop {
+    }
+}
