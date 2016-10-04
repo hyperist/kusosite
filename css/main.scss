@@ -162,6 +162,7 @@ body {
     }
 
     .sub-inner {
+        margin-top: -50px;
         margin-left: $eyecatch-width + 50px;
         height: 100%;
         .h {
@@ -202,4 +203,14 @@ body {
         z-index: 1;
         width: $eyecatch-width;
     }
+}
+
+.addr {
+    margin: 4px;
+    font-size: 14px;
+    color: lighten($text-color, 20%);
+}
+
+.material-icons {
+    vertical-align: middle;
 }
