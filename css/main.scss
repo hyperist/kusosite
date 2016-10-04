@@ -69,14 +69,14 @@ body {
 
 .top-main {
     @media (max-width: 800px) {
-        p {
+        & > * {
             padding: 20px;
             max-width: 100vw;
             margin: 0 auto;
         }
     }
     @media (min-width: 800px) {
-        p {
+        & > * {
             padding: 20px;
             max-width: 80vw;
             margin: 0 auto;
@@ -209,6 +209,25 @@ body {
     margin: 4px;
     font-size: 14px;
     color: lighten($text-color, 20%);
+}
+
+.flyer {
+    max-width: 400px;
+}
+
+.grid {
+}
+[class*='col-'] {
+    float: left;
+    padding: 10px;
+}
+.col-2 {
+    max-width: 50%;
+}
+.grid:after {
+  content: "";
+  display: table;
+  clear: both;
 }
 
 .material-icons {
