@@ -212,7 +212,7 @@ body {
 }
 
 .flyer {
-    max-width: 400px;
+    max-width: 100%;
 }
 
 .grid {
@@ -221,8 +221,16 @@ body {
     float: left;
     padding: 10px;
 }
+.col-1 {
+    width: 100%;
+}
 .col-2 {
-    max-width: 50%;
+    @media (max-width: 800px) {
+        width: 100%;
+    }
+    @media (min-width: 800px) {
+        width: 50%;
+    }
 }
 .grid:after {
   content: "";
@@ -232,4 +240,8 @@ body {
 
 .material-icons {
     vertical-align: middle;
+}
+
+.center {
+    text-align: center;
 }
