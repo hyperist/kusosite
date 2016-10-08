@@ -253,9 +253,84 @@ body {
     text-align: center;
 }
 
+.artists {
+    .name {
+        font-size: 40px;
+        color: #fff;
+        text-shadow: 2px 2px #222;
+        opacity: 0;
+        padding-top: 25px;
+        display: inline-block;
+    }
+    a {
+        position: absolute;
+        top: 0;
+        left: 0;
+        display: inline-block;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0,0,0,0.5);
+        opacity: 0;
+        transition: opacity 0.3s ease-out;
+        &:hover {
+            transition: opacity 0.3s ease-out;
+            opacity: 1;
+            .name {
+                opacity: 1;
+            }
+        }
+    }
+
+    .art {
+        position: relative;
+        width: 30%;
+        height: 100px;
+        background-position: center;
+        background-size: 100%;
+        display: inline-block;
+    }
+}
+
+.artists-full {
+    .name {
+        font-size: 40px;
+        color: #fff;
+        text-shadow: 2px 2px #222;
+        padding-top: 25px;
+        display: inline-block;
+    }
+    .art {
+        position: relative;
+        background-repeat: no-repeat;
+        background-size: 100%;
+        width: 100%;
+        height: 250px;
+        a {
+            position: absolute;
+            top: 0;
+            left: 0;
+            display: inline-block;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0,0,0,0.5);
+        }
+    }
+    .info {
+        text-align: left;
+        position: relative;
+        padding: 40px;
+        img {
+            max-height: 500px;
+            display: block;
+            margin: 0 auto;
+        }
+    }
+}
+
 
 mark {
     padding: 5px;
+
     a {
         color: $red;
     }
