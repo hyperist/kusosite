@@ -1,1 +1,1 @@
-kusoikore 3 promo site
+kusoikore 3 event site
