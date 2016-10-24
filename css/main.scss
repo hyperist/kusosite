@@ -66,6 +66,7 @@ body {
     background-color: $background-color;
     background-image: url('../static/img/tunnel.jpg');
     background-size: contain;
+    // max-width: 100%
 }
 
 .timeline-Widget {
@@ -187,6 +188,7 @@ body {
     overflow: hidden;
 }
 .eyecatch {
+    overflow: hidden;
     z-index: 1;
     display: block;
     width: $eyecatch-width;
