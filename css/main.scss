@@ -339,6 +339,33 @@ body {
     }
 }
 
+.dl-container {
+    position: relative;
+    .dl-img {
+        border-radius: 100%;
+        max-width: 100%;
+    }
+    .zip-label {
+        font-size: 100px;
+        width: 500px;
+        height: 150px;
+        max-width: 100%;
+        margin: auto;
+        position: absolute;
+        top: 0; left: 0; bottom: 0; right: 0;
+        color: #000;
+        background-color: rgba(255,255,0,0.8);
+        &:hover {
+            color: #fff;
+            background-color: #000;
+        }
+        .material-icons {
+            font-size: 100px;
+        }
+    }
+
+}
+
 
 mark {
     padding: 5px;
